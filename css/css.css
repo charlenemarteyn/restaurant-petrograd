@@ -1,0 +1,255 @@
+/* GENERAL */
+
+body {
+    max-width: 1285px;
+    max-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main {/*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "ht ht ht"
+        "na na na"
+        "sect0 sect0 sect0"
+        "sect1 sect1 sect1"
+        "sect2 sect2 sect2"
+        "sect3 sect3 sect3"
+        "sect4 sect4 sect4";
+    grid-gap: 10px;*/
+    margin: auto;
+}
+
+/* HEADER + NAME OF THE RESTAURANT */
+
+.top {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: auto;
+    height: 300px;
+    margin: 0px;
+    border: 1px solid darkgray;
+    padding: .5em;
+}
+
+.title {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 5.8em;
+    font-family: "avenir";
+}
+
+/* NAVIGATION */
+
+nav {
+    font-size: 1.2em;
+    font-family: "Avenir";
+    border: 1.4px solid black;
+    padding: .5em
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.1em;
+    margin-left: 14em;
+    margin-right: auto;
+}
+
+.borderline:hover {
+    border-bottom: 1px solid black;
+}
+
+a[href="#"] {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+/* GENERAL STYLE OF SECTIONS */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.bordure {
+    border-bottom: 1px solid black;
+    padding-top: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.short-description {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+button {
+    margin-left: 117px;
+    margin-top: 20px;
+}
+
+.list-product {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:.5em;
+}
+
+h1 {
+    font-family: "Avenir";
+    font-size: 3em;
+    margin: 30px;
+    text-align: center;
+    margin-top:35px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+h2 {
+    font-family: "Avenir";
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    padding-top: 1em;
+}
+
+h3 {
+    font-family: "Avenir";
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ALLERGENS + ALCOHOL + VEGETARIAN */
+
+.product-small-img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    padding-top: .3em;
+    padding-left: 1em;
+}
+
+.container {
+    position: relative;
+}
+
+.container:hover .product-small-img {
+    opacity: 0.3;
+}
+
+.container:hover .middle{
+    opacity: 1;
+}
+
+.logo1{
+    width: 20%;
+}
+
+/* DISCOUNT */
+
+.discount {
+    text-decoration: line-through;
+}
+
+
+/* SOLD OUT */
+
+.banner {
+    display: none;
+}
+
+.soldout {
+    opacity: 0.3;
+    position: relative;
+}
+
+.soldout .banner {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: -50px;
+    left: -50px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+section h1{
+    grid-column: 1 / -1;
+}
+
+
+/* MODAL SECTION */
+
+.modal{
+    position: fixed;
+    z-index:110;
+    padding-top:1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content{
+    background-color:#fefefe;
+    margin-top: 60px;
+    margin: auto;
+    padding:24px;
+    border: 1px solid #7c1f17;
+    width:60%;
+}
+
+.modal-image{
+    width:50%;
+    height:50%;
+}
+
+.modal-description{
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.bordurelong{
+    border-bottom: 1px solid black;
+    padding-top: 1em;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+
+/* CODES NEED TO BE CHECKED */
+
+.hidden {
+    display: none;
+}
+
+.hide{
+    display:none;
+}
+
